@@ -12,25 +12,12 @@ env/
 .vscode/
 .idea/
 
-# OS
-.DS_Store
-Thumbs.db
-
 # Logs
 *.log
 
 # API Keys
-*.key
 OpenRouterKey.txt
 
-# Data
-# data/datasets/
-# data/input_files/
-
-# Models
-*.pth
-*.pt
-*.ckpt
 
 # Temporary files
 *.tmp

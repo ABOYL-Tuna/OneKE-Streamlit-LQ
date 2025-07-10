@@ -4,7 +4,7 @@
 
 ### 1️⃣ 克隆项目
 ```bash
-git clone <your-repository-url>
+git clone git@github.com:ABOYL-Tuna/OneKE-Streamlit-LQ.git
 cd OneKE
 ```
 
