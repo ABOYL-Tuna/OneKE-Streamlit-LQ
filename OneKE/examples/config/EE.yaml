@@ -16,7 +16,7 @@
 model:
   category: DeepSeek 
   model_name_or_path: deepseek-chat 
-  api_key: sk-76c999869dcc4a348cc627ce632fa7d0 
+  api_key: sk-xxxxx
   base_url: https://api.deepseek.com 
 
 extraction:
