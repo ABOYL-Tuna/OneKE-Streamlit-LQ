@@ -9,11 +9,21 @@ cd OneKE
 ```
 
 ### 2️⃣ 一键部署
+
+**Linux/macOS:**
 ```bash
-# Linux/macOS
+# 如果遇到权限问题，先添加执行权限
+chmod +x deploy.sh
+
+# 然后运行部署脚本
 ./deploy.sh
 
-# Windows
+# 或者直接用bash运行
+bash deploy.sh
+```
+
+**Windows:**
+```bash
 deploy.bat
 ```
 
@@ -42,9 +52,31 @@ deploy.bat
 
 ## 🚨 遇到问题？
 
-1. 确保 Docker 已启动
-2. 检查端口 8501 是否被占用
-3. 查看日志: `./deploy.sh logs`
+### 常见问题及解决方案：
+
+1. **Permission denied 错误 (Linux/macOS)**
+   ```bash
+   chmod +x deploy.sh
+   ./deploy.sh
+   ```
+
+2. **Docker 相关问题**
+   - 确保 Docker 已启动
+   - 检查 Docker 服务状态: `docker --version`
+
+3. **端口占用问题**
+   - 检查端口 8501 是否被占用
+   - 修改端口: 编辑 docker-compose.yml
+
+4. **查看详细日志**
+   ```bash
+   ./deploy.sh logs
+   ```
+
+5. **手动部署 (备选方案)**
+   ```bash
+   docker-compose up -d
+   ```
 
 ---
 
