@@ -25,7 +25,7 @@ ONEKE_CONFIG = {
 # ==================== 模型配置 ====================
 MODEL_CONFIG = {
     "default_model": "deepseek-chat",
-    "default_api_key": "sk-76c999869dcc4a348cc627ce632fa7d0",
+    "default_api_key": "sk-xxxxxxxx",
     "default_base_url": "https://api.deepseek.com",
     "supported_models": {
         "gpt": ["gpt-3.5-turbo", "gpt-4o-mini", "gpt-4o", "o3-mini"],
