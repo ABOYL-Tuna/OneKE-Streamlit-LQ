@@ -5,7 +5,7 @@
 ### 1️⃣ 克隆项目
 ```bash
 git clone git@github.com:ABOYL-Tuna/OneKE-Streamlit-LQ.git
-cd OneKE
+cd OneKE-Streamlit-LQ
 ```
 
 ### 2️⃣ 一键部署
