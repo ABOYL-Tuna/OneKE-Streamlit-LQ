@@ -32,8 +32,32 @@ deploy.bat
 
 ## 🔧 环境要求
 
-- Docker Desktop
-- Git
+- **Docker Desktop** (包含Docker Compose)
+- **Git**
+
+### Docker Compose 安装检查
+
+**检查是否已安装:**
+```bash
+# 新版本Docker (推荐)
+docker compose version
+
+# 旧版本Docker Compose
+docker-compose --version
+```
+
+**如果没有安装Docker Compose:**
+```bash
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install docker-compose-plugin
+
+# CentOS/RHEL
+sudo yum install docker-compose-plugin
+
+# 或者使用pip安装
+pip install docker-compose
+```
 
 ## 📋 核心概念
 
@@ -60,21 +84,40 @@ deploy.bat
    ./deploy.sh
    ```
 
-2. **Docker 相关问题**
+2. **docker-compose: command not found 错误**
+   ```bash
+   # 方案1: 使用新版本Docker命令
+   docker compose up -d
+   
+   # 方案2: 安装docker-compose
+   sudo apt-get install docker-compose-plugin
+   
+   # 方案3: 检查Docker版本
+   docker --version
+   docker compose version
+   ```
+
+3. **Docker 相关问题**
    - 确保 Docker 已启动
    - 检查 Docker 服务状态: `docker --version`
 
-3. **端口占用问题**
+4. **端口占用问题**
    - 检查端口 8501 是否被占用
    - 修改端口: 编辑 docker-compose.yml
 
-4. **查看详细日志**
+5. **查看详细日志**
    ```bash
    ./deploy.sh logs
    ```
 
-5. **手动部署 (备选方案)**
+6. **手动部署 (备选方案)**
    ```bash
+   # 新版本Docker
+   cd docker
+   docker compose up -d
+   
+   # 旧版本Docker Compose
+   cd docker
    docker-compose up -d
    ```
 
