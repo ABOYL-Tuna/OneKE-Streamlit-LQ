@@ -76,6 +76,19 @@ from OneKE.src.modules import some_module
 - 只需维护前端项目的 `requirements.txt`
 - OneKE 项目保持只读，作为算法库使用
 
+## 📚 项目引用
+
+本项目基于 **OneKE** 项目构建，OneKE 是一个强大的知识抽取框架。
+
+### OneKE 项目信息
+- **项目名称**: OneKE (One-stop Knowledge Extraction)
+- **项目地址**: [https://github.com/zjunlp/OneKE](https://github.com/zjunlp/OneKE)
+- **论文**: [OneKE: A Dockerized Schema-Guided LLM Agent-based Knowledge Extraction Toolkit](https://arxiv.org/abs/2409.13793)
+- **作者**: ZJUNLP Team
+
+### 致谢
+感谢 OneKE 团队提供的优秀知识抽取算法和工具，本项目在其基础上构建了 Streamlit Web 界面，为用户提供更便捷的知识图谱构建体验。
+
 ---
 
 **🎉 现在可以开始使用 OneKE-Streamlit-Frontend 构建知识图谱了！**
